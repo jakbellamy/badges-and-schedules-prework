@@ -6,18 +6,18 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(name_array)
-  names_array.map do |name|
+  name_array.map do |name|
     "Hello, my name is #{name}."
   end
 end
 
 def assign_rooms(name_array)
-  names.each_with_index.map do |name, index|
+  name_array.each_with_index.map do |name, index|
     "Hello, #{name}! You'll be assigned to room #{index + 1}!"
   end
 end
 
 def printer(name_array)
-  batch_badge_creator(names_array)
-  assign_rooms(names_array)
+  batch_badge_creator(name_array)
+  assign_rooms(name_array)
 end
