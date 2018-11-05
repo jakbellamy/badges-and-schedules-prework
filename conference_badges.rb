@@ -5,13 +5,13 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(names_array)
+def batch_badge_creator(name_array)
   names_array.map do |name|
     "Hello, my name is #{name}."
   end
 end
 
-def assign_rooms(names_array)
+def assign_rooms(name_array)
   names.each_with_index.map do |name, index|
     "Hello, #{name}! You'll be assigned to room #{index + 1}!"
   end
